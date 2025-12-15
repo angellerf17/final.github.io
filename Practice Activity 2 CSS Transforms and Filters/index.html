@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Press On Nails</title>
+<nav style="padding:10px; background:#111; text-align:center;">
+  <a href="../index.html" style="color:white; text-decoration:none; font-weight:600;">
+    ← Back to Portfolio
+  </a>
+</nav>
+
+<style>
+  :root {
+    --gap: 16px;
+    --ink: #130917;
+    --paper: #cbd6e6;
+    --card: #f1e3f0;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  .grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "aside  main"
+      "footer footer";
+    gap: var(--gap);
+    padding: var(--gap);
+  }
+
+  header { grid-area: header; background: rgb(203, 225, 233); border-radius: 12px; padding: 16px 20px; position: relative; overflow: hidden; }
+  aside  { grid-area: aside;  background: var(--card); border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  main   { grid-area: main;   background: var(--card); border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  footer { grid-area: footer; background: rgb(156, 202, 218); border-radius: 12px; padding: 12px 16px; text-align: center; }
+  footer p { margin: 0; }
+
+  h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: .3px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .badge {
+    font-size: .9rem;
+    background: #e37dd1;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 999px;
+    animation: glowSlide 1.8s ease-out .3s both;
+    white-space: nowrap;
+  }
+  @keyframes glowSlide {
+    0%   { opacity: 0; transform: translateY(-14px) scale(.9); box-shadow: 0 0 0 rgba(6,90,130,0); }
+    60%  { opacity: 1; transform: translateY(0) scale(1.04);  box-shadow: 0 0 20px rgba(6,90,130,.45); }
+    100% { opacity: 1; transform: translateY(0) scale(1);     box-shadow: 0 0 10px rgba(6,90,130,.25); }
+  }
+
+  .aside-title { margin: 0 0 10px; font-size: 1.1rem; }
+  .thumb {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #b8d9ff, #e6f3ff);
+    border: 1px solid #d3e8ff;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  .thumb::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, rgba(0,0,0,.08) 0 8px, rgba(0,0,0,0) 8px 16px);
+    mix-blend-mode: multiply;
+  }
+  .thumb img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    filter: grayscale(85%) contrast(1.15) blur(0.5px);
+    transition: filter .35s ease;
+  }
+  .thumb:hover img { filter: grayscale(0%) contrast(1) blur(0px); }
+  .thumb small {
+    position: absolute; bottom: 8px; left: 10px;
+    background: rgba(255,255,255,.9); padding: 2px 8px; border-radius: 6px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: #f9fbff;
+    border: 1px solid #e5eefc;
+    border-radius: 12px;
+    padding: 14px;
+    transition: transform .35s ease, box-shadow .35s ease;
+  }
+  .card:hover { transform: scale(1.04) rotate(-1.5deg) translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.08); }
+  .card h3 { margin: 6px 0 8px; font-size: 1rem; }
+  .card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .card small { display: block; margin-top: 6px; color: #333; }
+  .card p { margin: 8px 0 0; color: #333; font-size: .95rem; }
+
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+  }
+</style>
+</head>
+
+<body>
+  <div class="grid">
+    <header>
+      <h1>
+        Press on Nails - Shop
+        <span class="badge">Buy me!</span>
+      </h1>
+    </header>
+
+    <aside>
+      <h2 class="aside-title">Nails Available</h2>
+      <div class="thumb">
+        <img alt="Dreamy Pink Press On Nails" src="https://i.etsystatic.com/46727789/r/il/9c3a08/5716893655/il_570xN.5716893655_4rqk.jpg">
+        <small>Strawberry Nails</small>
+      </div>
+      <div class="thumb">
+        <img alt="Koi Pond Bliss Press On Nails" src="https://i.etsystatic.com/46727789/r/il/093afa/6260516547/il_1588xN.6260516547_4gfc.jpg">
+        <small>Floral Koi Nails</small>
+      </div>
+    </aside>
+
+    <main>
+      <h2>Upcoming Styles:</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Christmas Nails</h3>
+          <img alt="Luxury Christmas Press On Nails"
+               src="https://i.etsystatic.com/46727789/r/il/5c7156/6463195611/il_1588xN.6463195611_ghiv.jpg">
+          <small>Gold Snowflakes & Pine Accents</small>
+          <p>Festive set with classic winter vibes</p>
+        </article>
+
+        <article class="card">
+          <h3>3D Flowers</h3>
+          <img alt="Colorful Orchid"
+               src="https://i.etsystatic.com/46727789/r/il/eae6c2/7008442154/il_1588xN.7008442154_a28p.jpg">
+          <small>3D Sculpted Flowers Fake Nails</small>
+          <p>Soft pinks with chrome for a cool vibe</p>
+        </article>
+
+        <article class="card">
+          <h3>Tropical Swirl</h3>
+          <img alt="Orange Yellow 3D Press on Nails"
+               src="https://i.etsystatic.com/46727789/r/il/5a4264/6988622382/il_1588xN.6988622382_9env.jpg">
+          <small>Ice Cream-Inspired</small>
+          <p>Glossy Summer Set</p>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>Contact: akf5900@psu.edu</p>
+    </footer>
+  </div>
+</body>
+</html>

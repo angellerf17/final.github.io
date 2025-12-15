@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seoulful Records - Home</title>
+    <link rel="stylesheet" href="stylerl.css">
+</head>
+<nav style="padding:10px; background:#111; text-align:center;">
+  <a href="../index.html" style="color:white; text-decoration:none; font-weight:600;">
+    ← Back to Portfolio
+  </a>
+</nav>
+<body>
+    <header class="site-header">
+        <h1>Seoulful Records</h1>
+        <nav class="site-nav">
+            <a href="recordstorelab.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Featured Albums</h2>
+            <div class="featured" role="list">
+                <article class="record-card" role="listitem" tabindex="0" aria-label="Dim Moonlight by Eunha Lee">
+                    <img src="https://static.wikia.nocookie.net/yorushika/images/0/0a/Moonlight-AlbumCover.jpg/revision/latest?cb=20220308024242" alt="Album Cover for Dim Moonlight by Eunha Lee">
+                    <div class="record-meta">
+                        <h3 class="record-title">Dim Moonlight</h3>
+                        <p class="record-artist">Eunha Lee</p>
+                    </div>
+                    <div class="more-info"><p>Black Swirl - $35</p></div>
+                </article>
+                <article class="record-card" role="listitem" tabindex="0" aria-label="Right Person, Wrong Time by RJM">
+                    <img src="https://provomusicmagazine.com/wp-content/uploads/2024/12/Cardinal-Bloom-The-Only-Place-Ive-Ever-Known.jpg" alt="Album Cover for Right Person, Wrong Time by RJM">
+                    <div class="record-meta">
+                        <h3 class="record-title">Right Person, Wrong Time</h3>
+                        <p class="record-artist">RJM</p>
+                    </div>
+                    <div class="more-info"><p>Black - $30</p></div>
+                </article>
+                <article class="record-card" role="listitem" tabindex="0" aria-label="Yesterday Blues by Minju Lee">
+                    <img src="https://f4.bcbits.com/img/a0126025802_16.jpg" alt="Album Cover for Yesterday Blues by Minju Lee">
+                    <div class="record-meta">
+                        <h3 class="record-title">Yesterday Blues</h3>
+                        <p class="record-artist">Minju Lee</p>
+                    </div>
+                    <div class="more-info"><p>Blue Swirl - $45</p></div>
+                </article>
+                <article class="record-card" role="listitem" tabindex="0" aria-label="Sweet Nothings by Eigan Il">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhRNVI3EP89x1FdBLPQQlwc5b9lomau4fXA&s" alt="Album Cover for Sweet Nothings by Eigan Il">
+                    <div class="record-meta">
+                        <h3 class="record-title">Sweet Nothings</h3>
+                        <p class="record-artist">Eigan Il</p>
+                    </div>
+                    <div class="more-info"><p>Black Swirl - $50</p></div>
+                </article>
+                <article class="record-card" role="listitem" tabindex="0" aria-label="Him, her, us by Rose">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-qoGiaQJodJTcNICzzEZqfh202-Dov5HtHA&s" alt="Album Cover for Him, her, us by Rose">
+                    <div class="record-meta">
+                        <h3 class="record-title">Him, her, us</h3>
+                        <p class="record-artist">Rose</p>
+                    </div>
+                    <div class="more-info"><p>Red - $65</p></div>
+                </article>
+            </div>
+        </section>
+        <section class="inventory">
+            <h2>Inventory</h2>
+            <table class="inv-table" aria-describedby="inventory-caption">
+                <caption id="inventory-caption" class="sr-only">Record Inventory with details</caption>
+                <thread>
+                    <tr>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Album</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr><td>Eunha Lee</td><td>Dim Moonlight</td><td>$35</td></tr>
+                    <tr><td>RJM</td><td>Right Person, Wrong Time</td><td>$30</td></tr>
+                    <tr><td>Minju Lee</td><td>Yesterday Blues</td><td>$45</td></tr>
+                    <tr><td>Eigan Il</td><td>Sweet Nothings</td><td>$50</td></tr>
+                    <tr><td>Rose</td><td>Him, her, us</td><td>$65</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Contact:</strong>info@seoulfulrecords.com</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

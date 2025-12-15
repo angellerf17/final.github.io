@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kemi :: Cocktail-Inspired Fragrance Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <span>Kemi: Scent + Mixology</span>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="cocktails.html">Cocktails to Scents</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn" href="contact.html">Scent Match</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section hero">
+    <div class="card hero-cta">
+      <div>
+        <h1>Cocktail-inspired fragrance, explained beautifully.</h1>
+        <p>
+          This small site teaches one how cocktail and their flavor profile can translate into a scent profile with different fragrance notes such as
+          citrus, florals, woods, gourmands — so you can pick scents like how you pick your drinks.
+        </p>
+        <ul>
+          <li>Learn note profiles and how they behave</li>
+          <li>See pairings and a quick “scent match”</li>
+          <li>Explore a gallery with notes filtered</li>
+        </ul>
+      </div>
+
+      <div style="display:flex; gap:.6rem; flex-wrap:wrap; align-items:center;">
+        <button class="btn" onclick="toggleTheme()">Toggle Theme (<span id="themeLabel">Light</span>)</button>
+        <span class="small">Tip: Use Gallery filters for quick browsing.</span>
+      </div>
+    </div>
+
+    <img class="hero-img" src="images/hero.jpg" alt="A styled perfume bottle with cocktail-inspired mood props">
+  </section>
+
+  <section class="section grid-3">
+    <article class="card feature">
+      <span class="tag">Beginner</span>
+      <h3>Start with families</h3>
+      <p class="small">Citrus, floral, woody, gourmand. Get to the “map.”</p>
+      <a class="btn" href="notes.html">Explore Notes</a>
+    </article>
+
+    <article class="card feature">
+      <span class="tag">In Practice</span>
+      <h3>Pair cocktails to fragrence notes</h3>
+      <p class="small">A simple table that turns your favorite cocktail into note ideas.</p>
+      <a class="btn" href="cocktails.html">See Pairings</a>
+    </article>
+
+    <article class="card feature">
+      <span class="tag">Visuals</span>
+      <h3>Gallery</h3>
+      <p class="small">Click a category to filter the scent styles.</p>
+      <a class="btn" href="gallery.html">Open Gallery</a>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2025 Kemi Scents • Angelle Final Project</div>
+    <div>
+      <a href="index.html">Home</a> ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

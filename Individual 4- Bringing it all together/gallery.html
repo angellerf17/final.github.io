@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Kemi Scent Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand"><div class="brand-badge" aria-hidden="true"></div><span>Kemi: Scent + Mixology</span></div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="cocktails.html">Cocktails → Scents</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="btn" onclick="toggleTheme()">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section card">
+    <h1>Gallery</h1>
+    <p class="small">Filter by scent style .</p>
+
+    <div class="pills">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="citrus">Citrus</button>
+      <button class="pill" data-filter="floral">Floral</button>
+      <button class="pill" data-filter="woody">Woody</button>
+      <button class="pill" data-filter="gourmand">Gourmand</button>
+    </div>
+
+    <div class="grid-3">
+      <div class="card feature" data-type="citrus">
+        <h3>French 75 Sparkle</h3>
+        <p class="small">Lemon + neroli + clean musk.</p>
+        <img src="images/citrus.jpg" alt="Citrus concept">
+      </div>
+
+      <div class="card feature" data-type="floral">
+        <h3>Petal Mist</h3>
+        <p class="small">Soft florals with airy sweetness.</p>
+        <img src="images/floral.jpg" alt="Floral concept">
+      </div>
+
+      <div class="card feature" data-type="woody">
+        <h3>Velvet Oak</h3>
+        <p class="small">Woods + resin + warm spice.</p>
+        <img src="images/woody.jpg" alt="Woody concept">
+      </div>
+
+      <div class="card feature" data-type="gourmand">
+        <h3>Espresso Silk</h3>
+        <p class="small">Coffee + cacao + vanilla.</p>
+        <img src="images/hero.jpg" alt="Gourmand concept">
+      </div>
+
+      <div class="card feature" data-type="citrus">
+        <h3>Orange Bitters</h3>
+        <p class="small">Zesty peel + aromatic herbs.</p>
+        <img src="images/citrus.jpg" alt="Orange concept">
+      </div>
+
+      <div class="card feature" data-type="gourmand">
+        <h3>Coconut Cream</h3>
+        <p class="small">Tropical creamy comfort.</p>
+        <img src="images/hero.jpg" alt="Coconut concept">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2025 Kemi Scent Guide • Angelle Final Project</div>
+    <div><a href="contact.html">Next: Contact</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

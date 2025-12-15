@@ -1,0 +1,208 @@
+:root{
+  --bg: #ebd9e3;       
+  --surface: #ffffff;  
+  --surface-2:#fff7fb; 
+  --ink:#231f24;     
+  --muted:#6b6570;    
+  --rose:#b85a78;     
+  --pink:#f3c3d6;      
+  --pink-deep:#e6a7c1; 
+  --ring: rgba(184,90,120,.18);
+
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 12px 30px rgba(25, 10, 20, 0.10);
+  --shadow-soft: 0 6px 18px rgba(25, 10, 20, 0.06);
+
+  --font-main: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-title: "Playfair Display", Georgia, serif;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:var(--font-main);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #fde9f2 0%, transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, #fbe1ec 0%, transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #f2d7e3;
+}
+
+.princess-navbar {
+    background: rgba(210, 154, 178, 0.6);
+    backdrop-filter: blur(12px);
+}
+.nav-inner{
+  max-width:1100px;
+  margin:auto;
+  padding: .9rem 1.2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{
+  font-weight:700;
+  letter-spacing:.3px;
+  color:var(--rose);
+  text-decoration:none;
+}
+.nav-links a{
+  margin-left:1rem;
+  text-decoration:none;
+  color:var(--ink);
+  font-weight:600;
+  padding:.45rem .7rem;
+  border-radius:999px;
+}
+.nav-links a:hover{
+  background: var(--surface-2);
+  color:var(--rose);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding: 2rem 1.2rem 3rem;
+}
+.hero{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 1.8rem;
+  align-items:center;
+  background: var(--surface);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 2.2rem;
+  box-shadow: var(--shadow);
+  border:1px solid #f3d5e2;
+}
+.hero h1{
+  font-family:var(--font-title);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  margin:0 0 .5rem;
+  color:var(--ink);
+}
+.hero p{
+  color:var(--muted);
+  font-size:1.05rem;
+  margin:.2rem 0 1rem;
+}
+.hero .pill{
+  display:inline-flex;
+  gap:.5rem;
+  align-items:center;
+  font-weight:600;
+  color:var(--rose);
+  background: var(--surface-2);
+  padding:.35rem .75rem;
+  border-radius:999px;
+  border:1px solid #f3d5e2;
+  margin-bottom:.8rem;
+}
+.hero-card{
+  background: linear-gradient(180deg, #fff, #fff7fb);
+  border:1px dashed #eec3d4;
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  text-align:center;
+}
+.hero-card img{
+  width:100%;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+}
+
+.section-title{
+  margin: 2.2rem 0 1rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+}
+.section-title h2{
+  font-family:var(--font-title);
+  font-size:1.7rem;
+  margin:0;
+  color:var(--rose);
+}
+.section-title p{
+  margin:0;
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1.4rem;
+}
+
+.card{
+  background:var(--surface);
+  padding:1rem;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-soft);
+  border:1px solid #f3d5e2;
+  transition: transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+  border-color:#ebb2c7;
+}
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:var(--radius-sm);
+  margin-bottom:.8rem;
+  border:1px solid #f3d5e2;
+}
+.card h3{
+  margin:.2rem 0 .25rem;
+  font-size:1.15rem;
+}
+.card p{
+  color:var(--muted);
+  font-size:.98rem;
+  margin:0 0 .8rem;
+}
+
+.btn{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  background: var(--pink);
+  color:var(--ink);
+  font-weight:700;
+  padding:.7rem 1rem;
+  border-radius: 12px;
+  text-decoration:none;
+  border:1px solid #eab3c7;
+  box-shadow: 0 6px 12px rgba(184,90,120,.12);
+  transition: background .2s ease, transform .15s ease;
+}
+.btn:hover{
+  background: var(--pink-deep);
+  transform: translateY(-1px);
+}
+
+footer{
+  text-align:center;
+  color: var(--muted);
+  padding: 2.5rem 1rem;
+}
+footer a{color:var(--rose); text-decoration:none; font-weight:600;}
+footer a:hover{text-decoration:underline;}
+
+@media (max-width: 800px){
+  .hero{grid-template-columns:1fr;}
+}

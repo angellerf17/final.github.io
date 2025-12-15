@@ -1,0 +1,75 @@
+:root {
+  --pink: #ffb7d5;
+  --pink-dark: #ff8cbc;
+  --pink-light: #ffe4f1;
+  --white: #fff;
+}
+
+.princess-bg {
+  background: linear-gradient(180deg, #ffe8f3 0%, #ffb7d5 100%);
+  min-height: 100vh;
+}
+
+.princess-navbar {
+  background: linear-gradient(90deg, #ff8cbc, #ffb7d5);
+  border-bottom: 2px solid #fff3f9;
+}
+
+.princess-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB...")
+}
+
+.princess-title {
+  color: #ff59a8;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 121, 173, 0.5);
+}
+
+.btn-pink {
+  background-color: var(--pink-dark);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(255, 100, 160, 0.5);
+  border-radius: 20px;
+}
+
+.btn-pink:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.princess-card {
+  border-radius: 20px;
+  border: 2px solid #ffd3e6;
+  background: #fff6fa;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.princess-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 125, 170, 0.4);
+}
+
+.text-pink {
+  color: #ff59a8;
+  font-weight: 700;
+}
+
+.bg-pink {
+  background-color: #ff8cbc !important;
+}
+
+.sparkles {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.princess-card img {
+  height: 300px;        
+  width: 100%;          
+  object-fit: cover;    
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
